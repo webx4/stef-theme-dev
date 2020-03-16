@@ -1,0 +1,291 @@
+/*
+Theme Name: Stef Guilly
+Theme URI:  
+Author: Webx4
+Author URI: http://stef-guilly-a.web.dmitcapstone.ca/wordpress/
+Description:   Stef Guilly Author site
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI:  
+Text Domain: 
+Tags: Setting Up WordPress
+*/
+
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+/* site-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 101;
+  -webkit-box-shadow: 0 0 5px 0 grey;
+  box-shadow: 0 0 5px 0 grey;
+  padding: 0.5rem 1rem;
+  position: relative;
+  color: #bfbfbf;
+} */
+
+.icon-view {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  list-style-type: none;
+}
+
+a.home-link {
+  text-decoration: none;
+  color: #adacac;
+  font-weight: 700;
+}
+
+.mobile-menu-icon {
+  width: 1.5rem;
+  vertical-align: middle;
+}
+
+.login {
+  display: none;
+}
+
+.list-view-container {
+  display: none;
+}
+
+.login-button {
+  -webkit-box-shadow: 0 0 5px 0 grey;
+  box-shadow: 0 0 5px 0 grey;
+  padding: 0.5rem 1rem;
+  font-size: 0.6825rem;
+  background: transparent;
+  color: #444444;
+  border: none;
+  border-radius: 6px;
+  text-decoration: none;
+}
+/* FRONT PAGE MOBILE */
+.poem {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+p {
+  margin-bottom: 0.5rem;
+  line-height: 1.5rem;
+  font-family: "Raleway";
+}
+h1,
+h2,
+h3 {
+  font-family: "Sacramento";
+  color: #df9e8c;
+}
+h2 {
+  font-size: 4.5rem;
+}
+h3 {
+  font-size: 2.5rem;
+}
+.tagline {
+  font-family: "Sacramento";
+  color: #df9e8c;
+  font-size: 2.25rem;
+}
+.primaryButton {
+  background-color: #cef1f2;
+  color: #44c0c5;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+.primaryButton:hover {
+  background-color: #44c0c5;
+  color: white;
+}
+.container {
+  margin: 0 20px;
+}
+/* GALLERY */
+.secondary-header {
+  height: 300px;
+ 
+
+  margin-bottom: 10rem;
+
+  background-image: url("http://stef-guilly-a.web.dmitcapstone.ca/wordpress/wp-content/uploads/2020/02/paint-stripe.png");
+  background-size: 63%;
+  background-repeat: no-repeat;
+
+
+    border-bottom: 4px solid #dff6f6;
+    margin-bottom: 10rem;
+   
+   
+    background-position: cover;
+    background-repeat: no-repeat;
+    background-position: 45% 51%;
+    background-size: auto;
+}
+.secondary-header > .container > h2 {
+  line-height: 300px;
+  padding-right: 30px;
+}
+.gallery-row {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.gallery-row:nth-child(even) > .gallery-text {
+  background-color: #cef1f2;
+  color: #44c0c5;
+  padding: 50px 30px;
+}
+.gallery-row:nth-child(odd) > .gallery-text {
+  color: #cef1f2;
+  background-color: #44c0c5;
+  padding: 50px 30px;
+}
+.gallery-text {
+  max-height: 439.89px;
+}
+.gallery-text > p {
+  font-size: 1.25rem;
+  line-height: 2rem;
+}
+
+/* footer */
+footer {
+  background-color: #44c0c5;
+  padding: 1.5rem 0;
+  margin-top: 8rem;
+}
+.bottomMenu > a {
+  text-decoration: none; 
+  color:#cef1f2;
+  line-height:1.5rem; 
+}
+
+/* 
+---------------------------------------------------------------------------------------
+MOBILE MENU STYLES
+-------------------------------------------------------------------------------------
+*/
+/* #mobile-menu-items {
+  width: 100%;
+  height: 65vh;
+}
+
+.mobile-menu-items {
+  width: 100%;
+  background: #ececec;
+  border-bottom: 1px solid #e6e6e6;
+  -webkit-box-shadow: 0 0 5px 0 #dfdfdf;
+  box-shadow: 0 0 5px 0 #dfdfdf;
+  padding: 2rem 1rem;
+  z-index: 100;
+} */
+
+/* 
+---------------------------------------------------------------------------------------
+Break Point Styles Switch between drop down menu and  list of links
+-------------------------------------------------------------------------------------
+*/
+@media (min-width: 768px) {
+  
+ 
+  .list-view-container {
+    display: block;
+  }
+   .list-view {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  } 
+
+
+  /* 
+---------------------------------------------------------------------------------------
+MAIN PAGE HEADER
+-------------------------------------------------------------------------------------
+*/
+
+}
+@media (min-width: 768px) {
+
+
+
+
+
+
+
+  .flex {
+    display: flex;
+    justify-content: space-between;
+  }
+  .poem {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .poem > div {
+    width: 33%;
+  }
+  .flex-home {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .flex-home > div:first-of-type {
+    width: 40%;
+  }
+  .flex-home > div:last-of-type {
+    width: 58%;
+  }
+
+  /* Gallery */
+ 
+
+  .gallery-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+
+  .gallery-row:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+  /* .gallery-img > img {
+    /* max-width: 676px; */
+  /* }  */
+  .gallery-img {
+    width: 55%;
+  }
+  .gallery-text {
+    /* width: 450px; */
+    width: 40%;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
